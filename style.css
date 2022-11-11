@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  appearance: none;
+  border: none;
+  outline: none;
+}
+
+button {
+  appearance: none;
+  border: none;
+  background: none;
+}
+
+.button {
+  margin-top: 15px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  color: #212529;
+  font-size: 20px;
+  display: inline-flex;
+  align-items: center;
+  background: rgb(163, 214, 221);
+  transition: all 300ms ease-in;
+  user-select: none;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+.btn-svg svg {
+  margin-left: 10px;
+}
+
+/* task 3 */
+.messenger {
+  width: 100%;
+  max-width: 475px;
+}
+
+.enter-wrap {
+  width: 100%;
+  display: flex;
+}
+
+.input-message {
+  width: 100%;
+  border: 5px solid #bad7ec;
+  padding: 5px 10px;
+}
+
+.enter-btn {
+  background-color: #bad7ec;
+  margin-left: 10px;
+  white-space: nowrap;
+  padding: 0 10px;
+  transition: all 400ms linear;
+}
+
+.enter-btn:hover {
+  filter: hue-rotate(-160deg);
+}
+
+.message-wrap {
+  border: 5px solid #bad7ec;
+  margin-top: 15px;
+  min-height: 45px;
+  padding: 5px;
+}
+
+.message-text {
+  width: fit-content;
+  padding: 10px 20px;
+  border: 5px solid #bad7ec;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  word-break: break-all;
+}
+
+.message-text.client {
+  margin-left: auto;
+}
+
+.message-text.error {
+  color: red;
+}
